@@ -14,7 +14,7 @@
     <!--Title For Website-->
     <title>Developer Student Club VIT</title>
 
-    <!--Linking Favicon, CSS, Bootstrap and Fonts-->
+    <!--Linking Favicon, CSS, Bootstrap CSS, Fonts and Bootstrap JS & jQuery-->
     <link href="Assets/DSC VIT.png" rel="icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,716 +25,250 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
     <!--Navbar-->
-    <header>
-        <div class="topnav-right" style="margin-top: 2vh;margin-bottom: 10vh;margin-right: 2vh;">
-            <a href="#home" style="margin-right: 6vh;color: black;margin-left:90vh;cursor: pointer;">Home</a>
-            <a href="#our-focus" style="margin-right: 6vh;color: black;cursor: pointer;">Our Focus</a>
-            <a href="#team" style="margin-right: 6vh;color: black;cursor: pointer;">The Team</a>
-            <a href="#alumni" style="margin-right: 6vh;color: black;cursor: pointer;">Alumni</a>
-            <a href="#updates" style="margin-right: 6vh;color: black;cursor: pointer;">Update</a>
-            <a href="#contact" style="margin-right: 6vh;color: black;cursor: pointer;">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-light"
+        style="background-color: white;padding-top: 20px;padding: 14px 16px;font-weight: 200;font-size: 20px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active" style="padding-right:1vw;">
+                    <b><a class="nav-link" href="index.html" style="color:black;">Home</a></b>
+                </li>
+                <li class="nav-item" style="margin-right:1vw;">
+                    <b><a class="nav-link" href="index.html#our-focus" style="color:black;">Our Focus</a></b>
+                </li>
+                <li class="nav-item" style="margin-right:1vw;">
+                    <b><a class="nav-link" href="team.html" style="color:black;">The Team</a></b>
+                </li>
+                <li class="nav-item" style="margin-right:1vw;">
+                    <b><a class="nav-link" href="alumni.html" style="color:black;">Alumni</a></b>
+                </li>
+                <li class="nav-item" style="margin-right:1vw;">
+                    <b><a class="nav-link" href="updates.html" style="color:black;">Update</a></b>
+                </li>
+                <li class="nav-item" style="margin-right:1vw;">
+                    <b><a class="nav-link " href="index.html#contact" style="color:black;">Contact Us</a></b>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <!--Description of DSC VIT-->
-    <section class="sec1" style="position: absolute;margin-top: 30vh;margin-left: 20vh;transform:translateX(-10%);">
-        <div id="home">
-            <div>
-                <h1>DSC VIT Vellore</h1>
-            </div>
-            <div>
-                <h2>Powered by Google Developers</h2>
-            </div>
-            <div>
-                <p>At DSC VIT, our aim
-                    is to learn and teach. Developers, designers and<br>managers come together under one roof to
-                    create a community which<br>inspires thousands. Join Us!
-                </p>
+    <section class="sec1">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6" style="padding-left: 40px;padding-right: 40px;">
+                    <div class="headings">
+                        DSC VIT Vellore
+                    </div>
+                    <div class="sub-head">
+                        Powered by Google Developers
+                    </div>
+                    <div class="paras">
+                        At DSC VIT, our aim is to learn and teach. Developers, designers and<br>
+                        managers come together under one roof to create a community which<br>
+                        inspires thousands. Join Us!
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="down-arrow"
-        style="position: absolute;bottom: 3vh;left: 50%;transform:translateX(-50%);cursor: pointer;margin-top: 0vh;">
-        <a href="#home"><img src="Assets/down-arrow.svg" alt="Scroll Down" class="img-responsive"></a>
+    <!--Arrow to home-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <a href="#our-focus"><img src="Assets/down-arrow.svg" class="img"></a>
+                </div>
+            </div>
+        </div>
     </div>
 
+
     <!--All links with buttons-->
-    <section class="sec2"
-        style="position: absolute;margin-top: 110vh;left: 50%;transform:translateX(-50%);padding: 0px;" align="center"
-        id="home">
+    <section class="sec2">
 
         <!--Focus-->
-        <div class="container">
-            <h2>Our focus</h2>
-            <p>We think slightly out of the box, we believe that a club’s<br>resources
-                must not only be channeled into conducting<br>events but also to propagate learning and
-                teaching,<br>symbiotically.<br>
-                That said, we conduct two flagship events, namely, DevFest<br>and WomenTechies, and tons of insightful
-                workshops!
-            </p>
-            <div class="circle-content" id="our-focus">
-                <div class="circle"></div>
-                <p style="color: black;font-weight: 500;">Learn</p>
+        <div class="container-fluid" style="margin-top: 20vh;" id="our-focus">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Our focus
+                    </div>
+                    <div class="home-text" style="margin-bottom: 70px;margin-top: 20px;">
+                        We think slightly out of the box, we believe that a club’s<br>resources
+                        must not only be channeled into conducting<br>events but also to propagate learning and
+                        teaching,<br>symbiotically.<br>
+                        That said, we conduct two flagship events, namely, DevFest<br>and WomenTechies, and tons of
+                        insightful
+                        workshops!
+                    </div>
+                </div>
             </div>
-            <div class="circle-content">
-                <div class="circle"></div>
-                <p style="color: black;font-weight: 500;">Build</p>
-            </div>
-            <div class="circle-content">
-                <div class="circle"></div>
-                <p style="color: black;font-weight: 500;">Teach</p>
+        </div>
+
+        <div class="container-fluid" style="margin-top : 10px">
+            <div class="row" style="padding-left: 23vw; padding-right: 23vw">
+                <div class="col-12 col-lg-4" style="margin-bottom: 30px">
+                    <div class="circle"></div>
+                    <div class="text-center" style="padding-top: 10px">
+                        Learn
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4" style="margin-bottom: 30px">
+                    <div class="circle"></div>
+                    <div class="text-center" style="padding-top: 10px">
+                        Build
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4" style="margin-bottom: 30px">
+                    <div class="circle"></div>
+                    <div class="text-center" style="padding-top: 10px">
+                        Teach
+                    </div>
+                </div>
             </div>
         </div>
 
         <!--Team-->
-        <div style="margin-top: 40vh;">
-            <h2>Get to know the team</h2>
-            <p>We’ve got a strong team filled with caffeine addicted<br>developers, gradients loving designers and
-                machine
-                like<br>working managers.
-            </p>
-            <div class="btn-box">
-                <div class="btn-txt">The Team</div>
+        <div class="container-fluid" style="margin-top: 15vh;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Get to know the team
+                    </div>
+                    <div class="home-text" style="margin-bottom: 20px;margin-top: 20px;">
+                        We’ve got a strong team filled with caffeine addicted<br>developers, gradients loving designers
+                        and
+                        machine
+                        like<br>working managers.
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="team.html"><button type="button" class="btn btn-dark btn-box btn-txt btn-responsive"
+                                style="margin-top: 0;padding: 10px 35px;border-radius: 6px;font-size: 22px;font-family: 'Dosis', sans-serif;color: rgba(255, 255, 255, 0.781);background-color: black;">The
+                                Team</button></a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!--Alumni-->
-        <div style="margin-top: 10vh;">
-            <h2>Our alumni</h2>
-            <p>The current team was nurtured by a group of talented<br>seniors who were not just great leaders but also
-                supportive<br>friends.
-            </p>
-            <div class="btn-box">
-                <div class="btn-txt">Alumni</div>
+        <div class="container-fluid" style="margin-top: 15vh;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Our alumni
+                    </div>
+                    <div class="home-text" style="margin-bottom: 20px;margin-top: 20px;">
+                        The current team was nurtured by a group of talented<br>seniors who were not just great leaders
+                        but also
+                        supportive<br>friends
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="alumni.html"><button type="button" class="btn btn-dark btn-box btn-txt btn-responsive"
+                                style="margin-top: 0;padding: 10px 35px;border-radius: 6px;font-size: 22px;font-family: 'Dosis', sans-serif;color: rgba(255, 255, 255, 0.781);background-color: black;">The
+                                Alumni</button></a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!--Update-->
-        <div style="margin-top: 10vh;">
-            <h2>Update yourself</h2>
-            <p>We are actively conducting workshops, and also contributing<br>to the development side by churning out
-                high quality<br>projects.
-            </p>
-            <div class="btn">
-                <div class="btn-box">
-                    <div class="btn-txt">Projects</div>
-                </div>
-                <div class="btn-box">
-                    <div class="btn-txt">Workshops</div>
+        <div class="container-fluid" style="margin-top: 15vh;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Update yourself
+                    </div>
+                    <div class="home-text" style="margin-bottom: 20px;margin-top: 20px;">
+                        We are actively conducting workshops, and also contributing<br>to the development side by
+                        churning out
+                        high quality<br>projects.
+                    </div>
+                    <div class="col-12 py-4">
+                        <a href="updates.html"><button class="btn btn-dark mr-1 mb-1"
+                                style="padding: 10px 35px;border-radius: 6px;font-size: 22px;font-family: 'Dosis', sans-serif;color: rgba(255, 255, 255, 0.781);background-color: black;">Projects</button></a>
+                        <a href="updates.html"><button class="btn btn-dark mr-1 mb-1"
+                                style="margin-left:2vw;margin-top: 0;padding: 10px 35px;border-radius: 6px;font-size: 22px;font-family: 'Dosis', sans-serif;color: rgba(255, 255, 255, 0.781);background-color: black;">Workshops</button></a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--Contact-->
-        <div style="margin-top: 10vh;">
-            <h2>Contact us</h2>
-            <p>We’re very active on social media.</p>
-        </div>
-        <div align="center">
-            <div class="social-circle"></div>
-            <div class="social-circle"></div>
-            <div class="social-circle"></div>
-            <div class="social-circle"></div>
-            <div class="social-circle"></div>
+        <div class="container-fluid" style="margin-top: 15vh;" id="contact">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Contact Us
+                    </div>
+                    <div class="home-text" style="margin-bottom: 5px;margin-top: 20px;">
+                        We're very active on social media.
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="social-circle"></div>
+                        <div class="social-circle"></div>
+                        <div class="social-circle"></div>
+                        <div class="social-circle"></div>
+                        <div class="social-circle"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Idea-->
-        <div style="margin-top: 10vh;">
-            <div style="margin-bottom: 4vh;">
-                <h2>Submit an idea</h2>
-                <p>Didn’t get the chance to element your favourite idea? Why<br>not give us a chance to bring it to real
-                    life.
-                </p>
-            </div>
-
-            <div>
-                <div style="display: inline-block;"><input class="txt-box" type="text"></div>
-                <div style="display: inline-block;" class="btn-box">
-                    <div class="btn-txt">Send</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--The Team Heading-->
-    <section class="sec3" style="position: absolute;margin-top: 380vh;margin-left: 20vh;transform:translateX(-10%);">
-        <div>
-            <h1>The Team</h1>
-        </div>
-        <div>
-            <h2>Presenting the board of 2018-2019</h2>
-        </div>
-    </section>
-
-    <div class="down-arrow"
-        style="position: absolute;left: 50%;transform:translateX(-50%);cursor: pointer;margin-top: 430vh;">
-        <a href="#team"><img src="Assets/down-arrow.svg" alt="Scroll Down" class="img-responsive"></a>
-    </div>
-
-    <!--Board Members-->
-    <section class="sec4"
-        style="position: absolute;margin-top: 450vh;left: 50%;transform:translateX(-50%);padding: 0px;" align="center"
-        id="team">
-
-        <div class="container">
-            <h2>The Board</h2>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;position: relative;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;position: relative;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Pablo Macejkovic
-                    </p>
-                    <p style="font-weight: 500;">Producer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Sincere Gaylord
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Enoch Kub
-                    </p>
-                    <p style="font-weight: 500;">Designer</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Gaetano Haley
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Jenifer Cole DDS
-                    </p>
-                    <p style="font-weight: 500;">Director</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Adrienne Collins Jr.
-                    </p>
-                    <p style="font-weight: 500;">Consultant</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Updates Heading-->
-    <section class="sec5" style="position: absolute;margin-top: 775vh;margin-left: 20vh;transform:translateX(-10%);">
-        <div>
-            <h1>Updates</h1>
-        </div>
-        <div>
-            <h2>Projects and events</h2>
-        </div>
-    </section>
-
-    <div class="down-arrow"
-        style="position: absolute;left: 50%;transform:translateX(-50%);cursor: pointer;margin-top: 810vh;">
-        <a href="#updates"><img src="Assets/down-arrow.svg" alt="Scroll Down" class="img-responsive"></a>
-    </div>
-
-    <!--Projects-->
-    <section class="sec6"
-        style="position: absolute;margin-top: 830vh;left: 50%;transform:translateX(-50%);padding: 0px;" align="center"
-        id="updates">
-
-        <div class="container-fluid">
-            <h2>Projects</h2>
-
-            <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Events-->
         <div class="container-fluid" style="margin-top: 15vh;">
-            <h2>Events</h2>
-
             <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
+                <div class="col-12 text-center">
+                    <div class="home-heading" style="margin-top: 25px;">
+                        Submit an idea
                     </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
+                    <div class="home-text" style="margin-bottom: 5px;margin-top: 20px;">
+                        Didn’t get the chance to element your favourite idea? Why<br>
+                        not give us a chance to bring it to real life.
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--Workshops-->
-        <div class="container-fluid" style="margin-top: 15vh;">
-            <h2>Workshops</h2>
-
+        <div class="container-fluid" style="margin-top : 50px;">
             <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
+                <div class="col-12">
+                    <div class="input-group"
+                        style="width: 420px;height: 50px; margin-left: 50%;transform: translateX(-50%)">
+                        <input type="text" class="form"
+                            style="height:50px;border:1px solid black;width: 300px;border-radius: 4px;">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"
+                                style="background-color: black;width:100px;color: rgba(255, 255, 255, 0.781);border-radius: 4px;">Send</button>
+                        </div>
                     </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-                <div class="figure">
-                    <img class="scaled img-responsive" src="Assets/DSC VIT.png" alt="">
-                    <div class="proj-box">
-                        <p class="proj-txt">Project Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Updates-->
-        <div style="margin-top: 10vh;">
-            <h2>Updates</h2>
-            <div class="btn">
-                <div class="btn-box">
-                    <div class="btn-txt">January</div>
-                </div>
-                <div class="btn-box">
-                    <div class="btn-txt">February</div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <!--Alumni Heading-->
-    <section class="sec7" style="position: absolute;margin-top: 1650vh;margin-left: 20vh;transform:translateX(-10%);">
-        <div>
-            <h1>Our Alumni</h1>
-        </div>
-        <div>
-            <h2>The preceeding board</h2>
-        </div>
-    </section>
-
-    <div class="down-arrow"
-        style="position: absolute;left: 50%;transform:translateX(-50%);cursor: pointer;margin-top: 1670vh;">
-        <a href="#alumni"><img src="Assets/down-arrow.svg" alt="Scroll Down" class="img-responsive"></a>
-    </div>
-
-    <!--Alumni Members-->
-    <section class="sec8"
-        style="position: absolute;margin-top: 1690vh;left: 50%;transform:translateX(-50%);padding: 0px;" align="center"
-        id="alumni">
-
-        <div class="container">
-            <h2>Board of 2018</h2>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;position: relative;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;position: relative;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Pablo Macejkovic
-                    </p>
-                    <p style="font-weight: 500;">Producer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Sincere Gaylord
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Enoch Kub
-                    </p>
-                    <p style="font-weight: 500;">Designer</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Gaetano Haley
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Jenifer Cole DDS
-                    </p>
-                    <p style="font-weight: 500;">Director</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Adrienne Collins Jr.
-                    </p>
-                    <p style="font-weight: 500;">Consultant</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <h2>Board of 2017</h2>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;position: relative;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;position: relative;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Pablo Macejkovic
-                    </p>
-                    <p style="font-weight: 500;">Producer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Sincere Gaylord
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Enoch Kub
-                    </p>
-                    <p style="font-weight: 500;">Designer</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Gaetano Haley
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Jenifer Cole DDS
-                    </p>
-                    <p style="font-weight: 500;">Director</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Adrienne Collins Jr.
-                    </p>
-                    <p style="font-weight: 500;">Consultant</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <h2>Board of 2016</h2>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;position: relative;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;position: relative;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Pablo Macejkovic
-                    </p>
-                    <p style="font-weight: 500;">Producer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Sincere Gaylord
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Enoch Kub
-                    </p>
-                    <p style="font-weight: 500;">Designer</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Gaetano Haley
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Jenifer Cole DDS
-                    </p>
-                    <p style="font-weight: 500;">Director</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Adrienne Collins Jr.
-                    </p>
-                    <p style="font-weight: 500;">Consultant</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <h2>Board of 2015</h2>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;position: relative;">Keely Osinski
-                    </p>
-                    <p style="font-weight: 500;position: relative;">Agent</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Mary Rice
-                    </p>
-                    <p style="font-weight: 500;">Developer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Toney Fritsch
-                    </p>
-                    <p style="font-weight: 500;">Supervisor</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Pablo Macejkovic
-                    </p>
-                    <p style="font-weight: 500;">Producer</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Sincere Gaylord
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Enoch Kub
-                    </p>
-                    <p style="font-weight: 500;">Designer</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Gaetano Haley
-                    </p>
-                    <p style="font-weight: 500;">Analyst</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Jenifer Cole DDS
-                    </p>
-                    <p style="font-weight: 500;">Director</p>
-                </div>
-                <div>
-                    <div><img src="Assets/dp-pic.jpg" alt="" class="img-responsive dp-pic"></div>
-                    <p style="color: black;font-weight: 500;">Adrienne Collins Jr.
-                    </p>
-                    <p style="font-weight: 500;">Consultant</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <hr class="style14" style="margin-top: 25vh;">
 
 </body>
 
